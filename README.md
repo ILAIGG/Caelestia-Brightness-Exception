@@ -14,7 +14,7 @@ windows.
 ## Install
 
 ```sh
-python install.py
+./install.sh
 caelestia shell --restart
 ```
 
@@ -22,13 +22,13 @@ The installer copies the packaged Caelestia shell into the user's
 `~/.config/quickshell/caelestia` only when that directory does not already
 exist. It saves the two files it changes under
 `~/.local/state/caelestia-brightness-exception/` before editing them.
-To update an existing installation, run `python uninstall.py` followed by
-`python install.py` before restarting the Caelestia shell.
+To update an existing installation, run `./update.sh`, then restart the
+Caelestia shell.
 
 ## Uninstall
 
 ```sh
-python uninstall.py
+./uninstall.sh
 caelestia shell --restart
 ```
 
@@ -37,3 +37,7 @@ the user configuration directory and all unrelated files intact.
 
 The software dimmer darkens rendered pixels; it cannot change the monitor's
 backlight or reproduce hardware dimming exactly.
+
+## License
+
+This project is distributed under the MIT License. See [LICENSE](LICENSE).
